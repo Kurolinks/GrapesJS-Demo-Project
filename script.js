@@ -16,6 +16,18 @@ const editor = grapesjs.init({
         appendTo: '#blocks',
         blocks: [
           {
+            id: 'text',
+            label: 'Text',
+            content: '<div data-gjs-type="text">Insert your text here</div>',
+          }, {
+            id: 'button',
+            label: 'Buttons',
+            content: '',
+          }, {
+            id: 'shapes',
+            label: 'Shapes',
+            content: '',
+          }, {
             id: 'section', // id is mandatory
             label: '<b>Section</b>', // You can use HTML/SVG inside labels
             attributes: { class:'gjs-block-section' },
@@ -23,10 +35,6 @@ const editor = grapesjs.init({
               <h1>This is a simple title</h1>
               <div>This is just a Lorem text: Lorem ipsum dolor sit amet</div>
             </section>`,
-          }, {
-            id: 'text',
-            label: 'Text',
-            content: '<div data-gjs-type="text">Insert your text here</div>',
           }, {
             id: 'image',
             label: 'Image',
